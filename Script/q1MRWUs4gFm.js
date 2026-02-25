@@ -1,0 +1,4 @@
+;/*FB_PKG_DELIM*/
+
+__d("MetaconfigWebExposureFalcoEvent",["FalcoLoggerInternal","getFalcoLogPolicy_DO_NOT_USE"],(function(t,n,r,o,a,i,l){"use strict";var e=r("getFalcoLogPolicy_DO_NOT_USE")("7235"),s=o("FalcoLoggerInternal").create("metaconfig_web_exposure",e),u=s;l.default=u}),98);
+__d("MetaConfig",["invariant","BanzaiLazyQueue","ExecutionEnvironment","MetaConfigMap","MetaconfigWebExposureFalcoEvent","justknobx"],(function(t,n,r,o,a,i,l,s){"use strict";var e,u={},c={_:function(n){var t=r("MetaConfigMap").get(n);t!=null||s(0,57910,n);var a=t.log_id,i=t.value;return a!=null&&u[n]!==!0&&((e||(e=r("ExecutionEnvironment"))).isInBrowser&&(r("justknobx")._("822")?r("MetaconfigWebExposureFalcoEvent").log(function(){return{identifier:n,log_id:a}}):o("BanzaiLazyQueue").queuePost("metaconfig_exposure",{identifier:n,log_id:a})),u[n]=!0),i}},d=c;l.default=d}),98);
